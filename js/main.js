@@ -11,7 +11,7 @@ function mostrarProductos() {
         let div = document.createElement('div')
         div.className ='producto'
         div.innerHTML =`<div class="card" id="${item.id}">
-                            <img src="${item.img}" class="card-img-top" alt="producto1">
+                            <img src="${item.img}" class="card-img-top" alt="${item.id}">
                             <div class="card-body">
                                 <h5 class="card-title-nombre">${item.nombre}</h5>
                                 <p class="card-text-marca">${item.marca}</p>
@@ -52,17 +52,15 @@ for(let boton of addToCart) {
 }
 function agregarCarrito(e){
     let boton = e.target;
-    let producto = boton.parentElement;
+    let producto = boton.parentElement.parentElement;
     let prodID = producto.getAttribute("id");
-    console.log(prodID); //genera null y a partir de aca genera error 
-}
-    /*let prodName = producto.querySelector("h5").innerText;
+    let prodName = producto.querySelector("h5").innerText;
     let precio = producto.querySelector(".card-text-precio").innerText;
     let img = producto.querySelector(".card-img-top").src;
     agregarElemento(prodID,prodName,precio,img)
 }
 
-/*function agregarElemento(prodID,prodName,precio,imagen) {
+function agregarElemento(prodID,prodName,precio,img) {
     let productRow = document.createElement("div");
     let contenedorProductos = document.querySelector(".product-rows");
 
@@ -75,6 +73,8 @@ function agregarCarrito(e){
         </div>
     `
     productRow.innerHTML = elemProducto;
+    localStorage.setItem("elemProducto",JSON.stringify("elemProducto"));
+    console.log(localStorage);
     contenedorProductos.append(productRow);
     let botonesBorrar = productRow.querySelectorAll(".remove-btn");
     for(let boton of botonesBorrar) {
@@ -82,16 +82,22 @@ function agregarCarrito(e){
     }
     cantElementosCarrito();
 }
+
+//borrar elemento del carrito
 function borrarElemento(e) {
     btn = e.target;
     btn.parentElement.parentElement.remove();
     cantElementosCarrito()
 }
 
+//mostrar cantidad de elementos sumados al carrito
 function cantElementosCarrito() {
     let cantidad = document.querySelectorAll(".product-rows > div");
     let cartQuantity = document.querySelector(".cart-quantity");
     cartQuantity.innerText = cantidad.length;
+}
 
-}*/
+//mostrar precio total carrito
+function totalPrecioCarrito (){
+}
 
