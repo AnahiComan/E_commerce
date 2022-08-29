@@ -1,4 +1,4 @@
-let stockProductos=[
+/*let stockProductos=[
     {id:"item1", nombre:"Cera Depilatoria Vegetal x200g", marca:"Depimiel", tipo:"depilacion", precio:"320", img:'img/Cera-Depilatoria-Vegetal-en-Perlas-Sistema-Español-x200-g-Depimiel.jpg'},
     {id:"item2", nombre:"Palo de depilación madera", marca:"LACA", tipo:"depilacion", precio:"99", img:'img/Palo-para-Depilacion.jpg'},
     {id:"item3", nombre:"Cera Depilatoria para microondas Vegetal x200g", marca:"Depimiel", tipo:"depilacion", precio:"415", img:'img/Cera-Depilatoria-para-Microondas-Vegetal-Sistema-Español-x200-g-Depimiel.jpg'},
@@ -19,4 +19,4 @@ let stockProductos=[
     {id:"item18", nombre:"Serum Reafirmante con Nanoliposomas x250ml", marca: "Exel", tipo:"masajes", precio:"2030", img:'img/Serum-Reafirmante-con-Nano-liposomas-x250ml-Exel.jpg'},
     {id:"item19", nombre:"Gel Base para Tratamientos Cosmetológicos x240ml", marca: "Exel", tipo:"masajes", precio:"820", img:'img/Gel-Base-para-Tratamientos-Cosmetologicos-x240ml-Exel.jpg'},
     {id:"item20", nombre:"Gel Cream Hidrodesestresante x30ml", marca: "Exel", tipo:"masajes", precio:"2350", img:'img/Gel-Cream-Hidrodesestresante-x30ml-Exel.jpg'},
-];
+];*/

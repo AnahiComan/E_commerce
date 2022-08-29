@@ -1,3 +1,6 @@
+.negro{
+  color:black;
+}
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -97,7 +100,7 @@ body{
     display: block;
   }
   
-  .purchase-btn {
+  .purchase-btn .purchase-btn1 {
     font-size: 1rem;
     background-color: rgb(255, 251, 251);
     border: 1px solid rgb(29, 1, 27);
@@ -176,3 +179,11 @@ body{
     }
   }
 
+.unidad {
+  margin-left: 1rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(102, 8, 74, 0.349);
+  color: white;
+}
